@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Speaker comparison — dance music</title>
+<style>
+  :root {
+    --bg: #f4f1ea;
+    --ink: #1c1915;
+    --muted: #6d655c;
+    --card: #fffdf9;
+    --line: #e4ddd2;
+    --accent: #c45c26;
+    --good: #1f6b45;
+    --warn: #8a5a12;
+    --bad: #8d3a2f;
+    --pick: #1c3d32;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.45;
+  }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 28px 18px 64px; }
+  .kicker {
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: var(--accent);
+    font-family: "Avenir Next", "Segoe UI", sans-serif;
+    font-weight: 600;
+  }
+  h1 { font-size: 34px; line-height: 1.05; margin: 8px 0 10px; font-weight: 600; }
+  .lede { font-size: 18px; color: #3c362f; max-width: 640px; margin: 0 0 22px; }
+  .verdict {
+    background: var(--pick);
+    color: #f6f1e7;
+    border-radius: 18px;
+    padding: 18px 18px 16px;
+    margin-bottom: 22px;
+  }
+  .verdict strong { color: #f3c27a; }
+  .verdict p { margin: 6px 0 0; }
+  .grid { display: grid; gap: 14px; }
+  @media (min-width: 760px) { .grid { grid-template-columns: 1fr 1fr 1fr; } }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 16px;
+    position: relative;
+  }
+  .card.winner { border-color: #1c3d32; box-shadow: 0 0 0 2px #1c3d32; }
+  .badge {
+    display: inline-block;
+    font-family: "Avenir Next", "Segoe UI", sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    background: #1c3d32;
+    color: #f6f1e7;
+    border-radius: 999px;
+    padding: 4px 8px;
+    margin-bottom: 8px;
+  }
+  .skip {
+    background: #efe7dc;
+    color: var(--bad);
+  }
+  h2 { font-size: 22px; margin: 0 0 4px; }
+  .price { font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 22px; margin: 6px 0; }
+  .meta { color: var(--muted); font-size: 14px; margin-bottom: 10px; }
+  ul { margin: 8px 0 0; padding-left: 18px; }
+  li { margin: 4px 0; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 16px; overflow: hidden; margin-top: 22px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 14px; vertical-align: top; }
+  th { font-family: "Avenir Next", "Segoe UI", sans-serif; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+  .note { color: var(--muted); font-size: 13px; margin-top: 16px; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="kicker">Amazon.de · 6 Oct 2026</div>
+    <h1>Clear, crisp, bassy — for electronic, bachata and salsa.</h1>
+    <p class="lede">Three portable Bluetooth speakers, compared for dancing. You need a tight kick, audible bass lines, and percussion that stays separate when the volume is up.</p>
+
+    <div class="verdict">
+      <div class="kicker" style="color:#f3c27a">Buy this</div>
+      <p><strong>Bose SoundLink Flex SE (2nd Gen).</strong> Best sound of the three once people are actually moving. Skip the Micro. Take the JBL only if you want to stay near €80 and mostly play at moderate volume.</p>
+    </div>
+
+    <div class="grid">
+      <article class="card">
+        <span class="badge skip">Skip for dancing</span>
+        <h2>SoundLink Micro 2nd Gen</h2>
+        <div class="price">€97.75</div>
+        <div class="meta">Blossom pink limited edition · 4.6★ · 1,719 reviews</div>
+        <ul>
+          <li>Pocket size, strap, IP67, 12 h</li>
+          <li>Clear for its size, bass falls off early</li>
+          <li>Compresses and distorts past moderate volume</li>
+          <li>Wrong size for a dance session</li>
+        </ul>
+      </article>
+      <article class="card winner">
+        <span class="badge">Best for this use</span>
+        <h2>SoundLink Flex SE 2nd Gen</h2>
+        <div class="price">about €118</div>
+        <div class="meta">Blue Dusk, no mic · list €159.95 · 4.5–4.6★</div>
+        <ul>
+          <li>Small brick, IP67, 12 h, Bluetooth 5.3</li>
+          <li>PositionIQ retunes by orientation</li>
+          <li>Clear mids, controlled kick, slightly bright top</li>
+          <li>App EQ; can pair a second speaker later</li>
+        </ul>
+      </article>
+      <article class="card">
+        <span class="badge skip">Best pure price</span>
+        <h2>Flip Essential 3 SE</h2>
+        <div class="price">€77.68</div>
+        <div class="meta">Black · 4.6★ · 104 reviews · list about €130</div>
+        <ul>
+          <li>Racetrack woofer + separate tweeter, 30 W</li>
+          <li>65 Hz–20 kHz, IP67, 12 h, Auracast</li>
+          <li>Punchy at moderate volume</li>
+          <li>Gets boomy and congested when turned up</li>
+        </ul>
+      </article>
+    </div>
+
+    <table>
+      <thead>
+        <tr><th></th><th>Micro</th><th>Flex SE</th><th>Flip 3 SE</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Price seen</td><td>€97.75</td><td>~€118</td><td>€77.68</td></tr>
+        <tr><td>Bass for dance</td><td>Weak</td><td>Tight kick, best of the three</td><td>Louder, then muddy</td></tr>
+        <tr><td>Crisp when loud</td><td>Distorts</td><td>Holds together</td><td>Tweeter helps, then congests</td></tr>
+        <tr><td>Battery / rating</td><td>12 h, IP67</td><td>12 h, IP67</td><td>12 h, IP67</td></tr>
+        <tr><td>Extra</td><td>Strap, app EQ</td><td>PositionIQ, pair a second</td><td>Auracast, bass boost</td></tr>
+      </tbody>
+    </table>
+
+    <p class="note">Prices from the Amazon.de listings opened on 6 Oct 2026 (Micro €97.75, Flip Essential 3 SE €77.68). Flex SE Blue Dusk was about €118 on Amazon.de the same week; your link may show a deal, so check the number before buying. None of these is a room-filling party speaker — the Flex is the one that stays usable for dancing.</p>
+  </div>
+</body>
+</html>
